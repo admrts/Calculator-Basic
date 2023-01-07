@@ -1,0 +1,67 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #eeeeee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  width: 300px;
+  height: 500px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 1);
+  border-radius: 12px;
+  background-image: linear-gradient(to right bottom, #dc5f00, #cf0a0a);
+  overflow: hidden;
+}
+form input {
+  width: 100%;
+  height: 150px;
+  border: none;
+  border-radius: 12px;
+  font-size: 2rem;
+  padding: 1rem;
+  color: #fff;
+  background-color: #000;
+  text-align: right;
+  pointer-events: none;
+  box-shadow: 0 5px 20px #dc5f00;
+}
+.buttons {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+button {
+  flex: 1 0 20%;
+  margin: 5px 5px;
+  width: 60px;
+  height: 52px;
+  border: 1px solid black;
+  box-shadow: 0 0 5px black;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.btn-operators {
+  background-image: linear-gradient(to right bottom, #4a4af2, #001c6f);
+}
+
+.btn-number {
+  background-image: linear-gradient(to right bottom, #1b1961, #d450e0);
+}
+
+.btn-equal {
+  background-image: linear-gradient(to right bottom, #00ff44, #0b3708);
+}
+.btn-clear {
+  background-image: linear-gradient(to right bottom, #ff0000eb, #5e0000);
+}
